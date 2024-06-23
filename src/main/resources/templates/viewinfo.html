@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력 정보 조회</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class='viewinfo'>
+    <div>성별: <span class='data-title' th:text="${statusform.gender}"></span> </div>
+    <div>나이: <span class='data-title' th:text="${statusform.age}"></span> </div>
+    <div>고혈압 여부: <span class='data-title' th:text="${statusform.hypertension}" ></span> </div>
+    <div>심장병 여부: <span class='data-title' th:text="${statusform.heartDisease}"></span> </div>
+    <div>뇌졸중 이력: <span class='data-title' th:text="${statusform.stroke}"></span> </div>
+    <div>흡연 상태: <span class='data-title' th:text="${statusform.smoking}"></span> </div>
+    <div>평균 혈당 농도: <span class='data-title' th:text="${statusform.avg_glucose_level}"></span> </div>
+    <div>BMI: <span class='data-title' th:text="${statusform.BMI}"></span> </div>
+    <div>결혼 여부: <span class='data-title' th:text="${statusform.ever_married}"></span> </div>
+    <div>직업 종류: <span class='data-title' th:text="${statusform.work_type}"></span> </div>
+    <div>거주지 유형: <span class='data-title' th:text="${statusform.residence_type}"></span> </div>
+</div>
+<button class="backtomainbtn" onclick="document.location.href='main'"> 확인 </button>
+</body>
+</html>
