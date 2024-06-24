@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+        <title>infoDetail</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body style="width:400px;margin:auto;align-items: center;background-color: rgba(106, 142, 35, 0.253);">
+        <h2 style="text-align: center; margin-block: 30px;">
+                뇌졸중 예방 정보
+        </h2>
+        <button class="predictbtn" onclick="document.location.href='/informations'"
+        style="
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        background-color: rgb(67, 85, 202);
+        color: whitesmoke;
+        font-size: 13px;
+        font-weight:bold;
+        padding-inline: 20px;
+        padding-block: 5px;"
+        >되돌아가기</button>
+        <div class="main2"></div>
+        <div class="main3" style="
+        text-align: center;
+        margin-top: 15px;
+        scroll-margin-left: 15px;
+        scroll-margin-right: 15px;
+        margin-bottom: 3px;
+        width: 380px;
+        padding-block: 10px;
+        font-size: 13px;
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        background-color: whitesmoke;">
+            <div style="font-size: 20px;font-weight: bold" ><td th:text="${infoDetail.title}"></td></div><br/>
+            <div style="font-size: 18px;padding-left: 10px;padding-right: 10px;text-align: left;"><td th:text="${infoDetail.detail}"></td></div><br/>
+        </div>
+    </body>
+</html>
