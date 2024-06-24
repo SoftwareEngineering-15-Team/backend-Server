@@ -39,7 +39,7 @@ jar 파일 실행
     │  │      └─team15
     │  │          │  Team15Application.java
     │  │          │
-    │  │          ├─info
+    │  │          ├─info (뇌졸중 관련 건강정보들을 제공하는 기능을 구현한 components)
     │  │          │  ├─controller
     │  │          │  │      InformationController.java
     │  │          │  │
@@ -53,10 +53,10 @@ jar 파일 실행
     │  │          │  └─service
     │  │          │          InformationService.java
     │  │          │
-    │  │          ├─main
+    │  │          ├─main (시작화면 -> 메인화면까지의 기본적인 기능을 구현한 components)
     │  │          │      MainController.java
     │  │          │
-    │  │          ├─prediction
+    │  │          ├─prediction (뇌졸중 발병확률을 예측하여 보여주는 기능을 구현한 components)
     │  │          │  ├─AImodel
     │  │          │  │      PredictionModel.java
     │  │          │  │
@@ -66,7 +66,7 @@ jar 파일 실행
     │  │          │  └─service
     │  │          │          PredictionService.java
     │  │          │
-    │  │          └─user
+    │  │          └─user (사용자 정보를 입력하고 조회하고 수정하는 기능을 구현한 components)
     │  │              ├─controller
     │  │              │      UserController.java
     │  │              │
