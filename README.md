@@ -19,18 +19,17 @@ jar 파일 실행
 
 # directory structure
 ```
-│  .gitignore  
+│  .gitignore
+│  README.md 
 │  build.gradle 
 │  gradlew 
 │  gradlew.bat 
-│  HELP.md 
-│  README.md 
-│  settings.gradle 
-│
-├─.gradle 
-├─.idea 
-├─gradle 
-├─out 
+│  settings.gradle
+|
+├─gradle
+│  └─wrapper
+│          gradle-wrapper.jar
+│          gradle-wrapper.properties
 └─src
     ├─main
     │  ├─generated
