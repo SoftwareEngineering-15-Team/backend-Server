@@ -56,7 +56,7 @@ jar 파일 실행
     │  │          ├─main (시작화면 -> 메인화면까지의 기본적인 기능을 구현한 components)
     │  │          │      MainController.java
     │  │          │
-    │  │          ├─prediction (뇌졸중 발병확률을 예측하여 보여주는 기능을 구현한 components)
+    │  │          ├─prediction (뇌졸중 발병확률을 예측하여 보여주는 기능을 구현한 components - AI모델과 연결되지 않아 random 확률을 display)
     │  │          │  ├─AImodel
     │  │          │  │      PredictionModel.java
     │  │          │  │
@@ -89,16 +89,16 @@ jar 파일 실행
     │      │      style.css
     │      │
     │      └─templates
-    │              clicktoinput.html
-    │              index.html
-    │              information.html
-    │              informationdetail.html
-    │              inputinfo.html
-    │              main.html
-    │              result.html
-    │              submit_fail.html
-    │              submit_success.html
-    │              viewinfo.html
+    │              clicktoinput.html (사용자 입력 시작 화면)
+    │              index.html (시작 화면)
+    │              information.html (뇌졸중 관련 건강정보들 리스트 화면)
+    │              informationdetail.html (뇌졸중 관련 건강정보들 세부 화면)
+    │              inputinfo.html (사용자 상태정보 입력화면)
+    │              main.html (메인 화면)
+    │              result.html (뇌졸중 발병확률 예측 확룔 조회 화면)
+    │              submit_fail.html (사용자정보 입력 실패시 화면 - 미구현)
+    │              submit_success.html (사용자정보 입력 성공시 화면)
+    │              viewinfo.html (사용자 정보 조회 화면)
     │
     └─test
         └─java
